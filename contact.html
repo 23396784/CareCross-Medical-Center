@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-55H383BR');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – CareCross Medical Center | GP in Piet Retief</title>
+    <meta name="description" content="Contact CareCross Medical Center in Piet Retief. Call 017 826 3711, WhatsApp 073 567 2753, or visit us at Shop 18, Kempville Shopping Center.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0077b6;
+            --primary-dark: #023e8a;
+            --primary-light: #90e0ef;
+            --accent: #00b4d8;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --gray-100: #e9ecef;
+            --gray-600: #6c757d;
+            --gray-800: #343a40;
+            --dark: #1a1a2e;
+            --gradient: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--accent) 100%);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'DM Sans', sans-serif; color: var(--gray-800); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navbar */
+        .navbar { background: var(--white); padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.4rem; position: relative; }
+        .logo-icon::before { content: '✚'; font-size: 1.6rem; }
+        .logo-text h1 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--primary-dark); line-height: 1.1; }
+        .logo-text span { font-size: 0.7rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; border: none; cursor: pointer; }
+        .btn-primary { background: var(--gradient); color: var(--white); box-shadow: 0 4px 15px rgba(0,119,182,0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,119,182,0.4); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-dark); }
+
+        /* Hero Banner */
+        .page-hero { background: var(--gradient); padding: 60px 0; text-align: center; color: var(--white); }
+        .page-hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 12px; }
+        .page-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+
+        /* Contact Section */
+        .contact-section { padding: 60px 0; }
+        .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 40px; }
+        .contact-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: 20px; padding: 32px; text-align: center; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .contact-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,119,182,0.12); }
+        .contact-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; margin-bottom: 12px; color: var(--primary-dark); }
+        .contact-card p, .contact-card a { color: var(--gray-600); font-size: 0.95rem; text-decoration: none; }
+        .contact-card a:hover { color: var(--primary); }
+
+        /* Hours */
+        .hours-section { background: var(--off-white); padding: 60px 0; }
+        .hours-card { max-width: 500px; margin: 0 auto; background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .hours-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-dark); text-align: center; margin-bottom: 24px; }
+        .hours-list { list-style: none; }
+        .hours-list li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100); font-size: 0.95rem; }
+        .hours-list li:last-child { border-bottom: none; }
+        .hours-list .day { font-weight: 500; }
+        .hours-list .time { color: var(--primary); font-weight: 600; }
+        .hours-list .closed { color: #e63946; }
+
+        /* CTA */
+        .cta-banner { background: var(--gradient); padding: 60px 0; text-align: center; }
+        .cta-banner h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--white); margin-bottom: 12px; }
+        .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1.1rem; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-white { background: var(--white); color: var(--primary-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,0,0,0.15); }
+        .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+
+        /* Map */
+        .map-section { padding: 0; }
+        .map-section iframe { width: 100%; height: 400px; border: 0; }
+
+        /* Footer */
+        .footer { background: #0d0d1a; color: rgba(255,255,255,0.5); padding: 40px 0 20px; text-align: center; }
+        .footer p { font-size: 0.85rem; }
+        .footer a { color: var(--accent); text-decoration: none; }
+
+        @media (max-width: 968px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); gap: 16px; }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+        }
+        @media (max-width: 600px) {
+            .page-hero h2 { font-size: 1.8rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55H383BR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <h1>CareCross</h1>
+                    <span>Medical Center</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+27178263711" class="btn btn-primary">📞 Call Now</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch — we're here to help with your healthcare needs</p>
+        </div>
+    </section>
+
+    <!-- CONTACT CARDS -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Our Location</h3>
+                    <p>Shop 18, Kempville Shopping Center<br>Kempville, Piet Retief 2380</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3>Phone Numbers</h3>
+                    <p>
+                        <a href="tel:+27178263711">017 826 3711</a><br>
+                        <a href="tel:+27735672753">073 567 2753</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">✉️</div>
+                    <h3>Email / WhatsApp</h3>
+                    <p>
+                        <a href="mailto:carefirstmedical788@gmail.com">carefirstmedical788@gmail.com</a><br><br>
+                        <a href="https://wa.me/27735672753">💬 WhatsApp Us</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="hours-card">
+                <h3>🕐 Opening Hours</h3>
+                <ul class="hours-list">
+                    <li><span class="day">Monday – Friday</span><span class="time">09:00 – 17:00</span></li>
+                    <li><span class="day">Saturday</span><span class="time">09:00 – 13:00</span></li>
+                    <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+                    <li><span class="day">Public Holidays</span><span class="closed">Closed</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Need to See a Doctor?</h2>
+            <p>Contact us today to book your appointment. Walk-ins are also welcome.</p>
+            <div class="cta-buttons">
+                <a href="tel:+27178263711" class="btn btn-white">📞 Call 017 826 3711</a>
+                <a href="https://wa.me/27735672753" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.5);">💬 WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=30.795%2C-27.010%2C30.815%2C-26.995&layer=mapnik&marker=-27.001%2C30.806" allowfullscreen="" loading="lazy" style="border:0;"></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CareCross Medical Center — Dr. V. Prefa & Partners. All rights reserved.</p>
+            <p style="margin-top:8px;">Shop 18, Kempville Shopping Center, Piet Retief 2380 | <a href="tel:+27178263711">017 826 3711</a></p>
+        </div>
+    </footer>
+</body>
+</html>
