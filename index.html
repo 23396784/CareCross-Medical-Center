@@ -182,6 +182,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .about-image h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 12px; }
         .about-image p { color: rgba(255,255,255,0.8); max-width: 300px; }
 
+        /* Doctor Profile */
+        .doctor-section { padding: 80px 0; }
+        .doctor-profile { display: grid; grid-template-columns: 300px 1fr; gap: 50px; align-items: center; }
+        .doctor-photo-placeholder {
+            width: 300px; height: 360px;
+            background: var(--gradient);
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+        .doctor-photo-placeholder .avatar { font-size: 90px; margin-bottom: 12px; }
+        .doctor-photo-placeholder .photo-note { font-size: 0.8rem; opacity: 0.6; margin-top: 8px; }
+        .doctor-info h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 6px; }
+        .doctor-info .doc-title { color: var(--primary); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+        .doctor-info p { color: var(--gray-600); font-size: 1rem; margin-bottom: 14px; }
+        .qualifications { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+        .qual-badge { background: rgba(0,119,182,0.08); border: 1px solid rgba(0,119,182,0.15); padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: var(--primary-dark); }
+
+        /* Testimonials */
+        .testimonials { background: var(--off-white); padding: 80px 0; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid var(--gray-100);
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,119,182,0.1); }
+        .stars { color: #f0a942; font-size: 1.1rem; margin-bottom: 14px; }
+        .testimonial-card .quote { font-size: 0.98rem; color: var(--gray-600); line-height: 1.7; font-style: italic; margin-bottom: 20px; }
+        .testimonial-card .quote::before { content: '"'; font-size: 2.5rem; color: var(--primary); font-family: 'Playfair Display', serif; line-height: 0; position: relative; top: 12px; margin-right: 4px; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 44px; height: 44px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1rem; }
+        .testimonial-author .name { font-weight: 700; color: var(--gray-800); font-size: 0.95rem; }
+        .testimonial-author .location { font-size: 0.82rem; color: var(--gray-600); }
+
         .medical-aids { text-align: center; }
         .aids-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 30px; }
         .aid-badge { background: var(--white); border: 2px solid var(--gray-100); padding: 12px 24px; border-radius: 50px; font-weight: 500; color: var(--gray-800); font-size: 0.9rem; transition: all 0.3s; }
@@ -218,6 +261,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .services-grid { grid-template-columns: 1fr; }
             .about-grid { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; }
+            .doctor-profile { grid-template-columns: 1fr; justify-items: center; }
+            .testimonials-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); gap: 16px; }
             .nav-links.active { display: flex; }
             .mobile-menu-btn { display: block; }
@@ -229,6 +274,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .features-grid { grid-template-columns: 1fr; }
             .hero-buttons { flex-direction: column; }
             .cta-buttons { flex-direction: column; align-items: center; }
+            .doctor-photo-placeholder { width: 220px; height: 270px; }
             .ah-buttons { flex-direction: column; align-items: center; }
             .after-hours-banner h2 { font-size: 1.5rem; }
         }
@@ -435,6 +481,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </section>
 
+    <!-- MEET YOUR DOCTOR -->
+    <section class="doctor-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Your Doctor</div>
+                <h2>Meet Dr. Victor Prefa</h2>
+                <p>Experienced, compassionate, and dedicated to your health</p>
+            </div>
+            <div class="doctor-profile">
+                <div class="doctor-photo-placeholder">
+                    <div class="avatar">👨‍⚕️</div>
+                    <strong style="font-size:1.1rem;">Dr. V. Prefa</strong>
+                    <p class="photo-note">Photo coming soon</p>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Victor Prefa</h3>
+                    <div class="doc-title">Principal Practitioner</div>
+                    <p>With over 17 years of clinical experience spanning healthcare settings across Nigeria, Lesotho, and South Africa, Dr. Prefa brings exceptional medical knowledge and a genuine commitment to patient-centred care to the Piet Retief community.</p>
+                    <p>Registered with the HPCSA and committed to continuous professional development, Dr. Prefa combines thorough clinical expertise with modern approaches including after-hours virtual consultations for medical aid patients.</p>
+                    <div class="qualifications">
+                        <span class="qual-badge">MBBS</span>
+                        <span class="qual-badge">MPH</span>
+                        <span class="qual-badge">MSc (Distinction)</span>
+                        <span class="qual-badge">HPCSA Registered</span>
+                        <span class="qual-badge">17+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ABOUT -->
     <section class="about" id="about">
         <div class="container">
@@ -455,6 +532,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="shield">🛡️</div>
                     <h3>Dr. Prefa Medical Centre</h3>
                     <p>Your trusted healthcare partner — where quality meets compassion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATIENT TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Testimonials</div>
+                <h2>What Our Patients Say</h2>
+                <p>Real experiences from patients who trust us with their health</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">Very professional and caring doctor. He takes time to listen and explain everything properly. I always feel comfortable bringing my whole family here.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">T</div>
+                        <div><div class="name">Thobile M.</div><div class="location">Piet Retief</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">The after-hours virtual consultation was a lifesaver. I didn't have to drive to the hospital at night. Dr. Prefa called me back quickly and sorted out my prescription.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div><div class="name">Sibusiso N.</div><div class="location">Mkhondo</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">Clean practice, friendly staff, and the doctor is thorough. I've been coming here for my chronic medication management and I'm very satisfied with the care.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">L</div>
+                        <div><div class="name">Lindiwe K.</div><div class="location">Piet Retief</div></div>
+                    </div>
                 </div>
             </div>
         </div>
