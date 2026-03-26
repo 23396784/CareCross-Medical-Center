@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "description": "Quality GP consultations, chronic care, minor procedures, after-hours virtual consultations, and family healthcare in Piet Retief",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Shop 18, Mansoor Road, Opposite Mansoor Butchery, Opposite R H Piet Retief Private Hospital, Kempville",
+            "streetAddress": "Shop 18, Mansoor Road, Kempville Shopping Centre, Kempville",
             "addressLocality": "Mkhondo",
             "postalCode": "2380",
             "addressCountry": "ZA"
@@ -116,7 +116,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .hours-list .time { color: var(--primary-light); font-weight: 600; }
         .hours-list .closed { color: #ff6b6b; }
 
-        /* After-Hours Banner */
         .after-hours-banner { background: linear-gradient(135deg, #1a2a4a 0%, #0d1b30 100%); padding: 50px 0; text-align: center; color: var(--white); position: relative; overflow: hidden; }
         .after-hours-banner::before { content: ''; position: absolute; top: -40%; right: -15%; width: 400px; height: 400px; background: rgba(0,119,182,0.08); border-radius: 50%; }
         .ah-badge { display: inline-flex; align-items: center; gap: 8px; background: #e63946; color: var(--white); font-size: 0.8rem; font-weight: 700; padding: 8px 20px; border-radius: 50px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1.5px; }
@@ -182,44 +181,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .about-image h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 12px; }
         .about-image p { color: rgba(255,255,255,0.8); max-width: 300px; }
 
-        /* Doctor Profile */
         .doctor-section { padding: 80px 0; }
         .doctor-profile { display: grid; grid-template-columns: 300px 1fr; gap: 50px; align-items: center; }
-        .doctor-photo-placeholder {
-            width: 300px; height: 360px;
-            background: var(--gradient);
-            border-radius: 24px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-align: center;
-            padding: 20px;
-        }
-        .doctor-photo-placeholder .avatar { font-size: 90px; margin-bottom: 12px; }
-        .doctor-photo-placeholder .photo-note { font-size: 0.8rem; opacity: 0.6; margin-top: 8px; }
         .doctor-info h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 6px; }
         .doctor-info .doc-title { color: var(--primary); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
         .doctor-info p { color: var(--gray-600); font-size: 1rem; margin-bottom: 14px; }
         .qualifications { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
         .qual-badge { background: rgba(0,119,182,0.08); border: 1px solid rgba(0,119,182,0.15); padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; color: var(--primary-dark); }
 
-        /* Testimonials */
         .testimonials { background: var(--off-white); padding: 80px 0; }
         .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
-        .testimonial-card {
-            background: var(--white);
-            border-radius: 20px;
-            padding: 32px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-            border: 1px solid var(--gray-100);
-            transition: all 0.3s;
-        }
+        .testimonial-card { background: var(--white); border-radius: 20px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid var(--gray-100); transition: all 0.3s; }
         .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,119,182,0.1); }
         .stars { color: #f0a942; font-size: 1.1rem; margin-bottom: 14px; }
         .testimonial-card .quote { font-size: 0.98rem; color: var(--gray-600); line-height: 1.7; font-style: italic; margin-bottom: 20px; }
-        .testimonial-card .quote::before { content: '"'; font-size: 2.5rem; color: var(--primary); font-family: 'Playfair Display', serif; line-height: 0; position: relative; top: 12px; margin-right: 4px; }
+        .testimonial-card .quote::before { content: '\201C'; font-size: 2.5rem; color: var(--primary); font-family: 'Playfair Display', serif; line-height: 0; position: relative; top: 12px; margin-right: 4px; }
         .testimonial-author { display: flex; align-items: center; gap: 12px; }
         .testimonial-avatar { width: 44px; height: 44px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1rem; }
         .testimonial-author .name { font-weight: 700; color: var(--gray-800); font-size: 0.95rem; }
@@ -274,7 +250,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .features-grid { grid-template-columns: 1fr; }
             .hero-buttons { flex-direction: column; }
             .cta-buttons { flex-direction: column; align-items: center; }
-            .doctor-photo-placeholder { width: 220px; height: 270px; }
             .ah-buttons { flex-direction: column; align-items: center; }
             .after-hours-banner h2 { font-size: 1.5rem; }
         }
@@ -299,7 +274,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
-            <span>📍 Shop 18, Mansoor Road, Opposite Mansoor Butchery, Opposite R H Piet Retief Private Hospital, Kempville, Mkhondo 2380</span>
+            <span>📍 Shop 18, Mansoor Road, Kempville Shopping Centre, Kempville, Mkhondo 2380</span>
             <div class="top-bar-right">
                 <a href="tel:+27178263711">📞 017 826 3711</a>
                 <a href="tel:+27710465187">📱 071 046 5187</a>
@@ -312,11 +287,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <div class="logo-icon"></div> 
-               <div class="logo-text">
-    <h1>Dr. Prefa Medical Centre</h1>
-    <span>General Practice · Piet Retief</span>
-</div>
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <h1>Dr. Prefa Medical Centre</h1>
+                    <span>General Practice · Piet Retief</span>
+                </div>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -398,7 +373,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="feature-card animate delay-3">
                     <div class="feature-icon">🏥</div>
                     <h3>Modern Facility</h3>
-                    <p>Clean, well-equipped consultation rooms in a convenient shopping center location</p>
+                    <p>Clean, well-equipped consultation rooms in a convenient shopping centre location</p>
                 </div>
                 <div class="feature-card animate delay-4">
                     <div class="feature-icon">❤️</div>
@@ -421,7 +396,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="service-card cat-blue">
                     <div class="service-card-header"><div class="icon">🩺</div><h3>General Consultations</h3></div>
                     <div class="service-card-body"><ul>
-                        <li>Medical Consultation & Prescription (Adults & Children)</li>
+                        <li>Medical Consultation &amp; Prescription (Adults &amp; Children)</li>
                         <li>Management of Common Medical Conditions</li>
                         <li>Medical Check-Up</li>
                         <li>Virtual Consultation</li>
@@ -430,25 +405,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="service-card cat-green">
                     <div class="service-card-header"><div class="icon">💉</div><h3>Chronic Disease Management</h3></div>
                     <div class="service-card-body"><ul>
-                        <li>Hypertension & Diabetes Management</li>
-                        <li>HIV & Tuberculosis Management</li>
-                        <li>HIV Counselling & Testing</li>
-                        <li>Pre & Post Exposure Prophylaxis (PrEP / PEP)</li>
+                        <li>Hypertension &amp; Diabetes Management</li>
+                        <li>HIV &amp; Tuberculosis Management</li>
+                        <li>HIV Counselling &amp; Testing</li>
+                        <li>Pre &amp; Post Exposure Prophylaxis (PrEP / PEP)</li>
                     </ul></div>
                 </div>
                 <div class="service-card cat-purple">
-                    <div class="service-card-header"><div class="icon">🤰</div><h3>Women's & Reproductive Health</h3></div>
+                    <div class="service-card-header"><div class="icon">🤰</div><h3>Women's &amp; Reproductive Health</h3></div>
                     <div class="service-card-body"><ul>
                         <li>Antenatal Care (Pregnancy Care)</li>
                         <li>Ultrasound Scan (Sonar)</li>
                         <li>Women's Clinic</li>
-                        <li>Family Planning & Contraception</li>
+                        <li>Family Planning &amp; Contraception</li>
                         <li>PAP Smear for Cervical Cancer</li>
                         <li>Pregnancy Test</li>
                     </ul></div>
                 </div>
                 <div class="service-card cat-orange">
-                    <div class="service-card-header"><div class="icon">🏋️</div><h3>Men's Health & STI Clinic</h3></div>
+                    <div class="service-card-header"><div class="icon">🏋️</div><h3>Men's Health &amp; STI Clinic</h3></div>
                     <div class="service-card-body"><ul>
                         <li>Men's Clinic</li>
                         <li>Male Medical Circumcision</li>
@@ -457,18 +432,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </ul></div>
                 </div>
                 <div class="service-card cat-teal">
-                    <div class="service-card-header"><div class="icon">📋</div><h3>Assessments & Procedures</h3></div>
+                    <div class="service-card-header"><div class="icon">📋</div><h3>Assessments &amp; Procedures</h3></div>
                     <div class="service-card-body"><ul>
                         <li>Professional Driving Permit (PDP) Assessment</li>
                         <li>Disability Grant Assessment (SASSA)</li>
                         <li>Medical Fitness Assessment</li>
                         <li>Minor Surgical Procedures</li>
-                        <li>Glucose, HIV & Urine Tests</li>
+                        <li>Glucose, HIV &amp; Urine Tests</li>
                         <li>FREE Blood Pressure Check</li>
                     </ul></div>
                 </div>
                 <div class="service-card cat-red">
-                    <div class="service-card-header"><div class="icon">❤️‍🩹</div><h3>Wellness & Screening</h3></div>
+                    <div class="service-card-header"><div class="icon">❤️‍🩹</div><h3>Wellness &amp; Screening</h3></div>
                     <div class="service-card-body"><ul>
                         <li>Health Risk Assessments</li>
                         <li>Weight Management</li>
@@ -489,7 +464,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h2>Meet Dr. Victor Prefa</h2>
                 <p>Experienced, compassionate, and dedicated to your health</p>
             </div>
-           <img src="doctor.jpg" alt="Dr. V. Prefa - Dr Prefa Medical Centre" style="width:300px; height:360px; object-fit:cover; border-radius:24px;">
+            <!-- FIX: img and doctor-info now correctly inside doctor-profile grid -->
+            <div class="doctor-profile">
+                <img src="doctor.jpg" alt="Dr. V. Prefa - Dr Prefa Medical Centre" style="width:300px; height:360px; object-fit:cover; border-radius:24px;">
                 <div class="doctor-info">
                     <h3>Dr. Victor Prefa</h3>
                     <div class="doc-title">Principal Practitioner</div>
@@ -514,7 +491,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="about-content">
                     <div class="badge">About Us</div>
                     <h2>Trusted Healthcare in the Heart of Piet Retief</h2>
-                    <p>Dr. Prefa Medical Centre is a trusted general practice conveniently located on Mansoor Road, Kempville. We are committed to providing affordable, accessible, and high-quality medical care to the Piet Retief community and surrounding areas.</p>
+                    <p>Dr. Prefa Medical Centre is a trusted general practice conveniently located at Kempville Shopping Centre, Mansoor Road. We are committed to providing affordable, accessible, and high-quality medical care to the Piet Retief community and surrounding areas.</p>
                     <p>Led by Dr. Victor Prefa and partners, our team brings extensive clinical experience and a genuine passion for patient care. Whether you need a routine check-up, chronic disease management, or minor surgical procedures, we are here for you.</p>
                     <div class="about-stats">
                         <div class="stat-card"><div class="number">17+</div><div class="label">Years of Experience</div></div>
@@ -619,7 +596,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="contact-card">
                     <div class="icon">📍</div>
                     <h3>Our Location</h3>
-                    <p>Shop 18, Mansoor Road, Opposite Mansoor Butchery, Opposite R H Piet Retief Private Hospital, Kempville, Mkhondo 2380</p>
+                    <p>Shop 18, Mansoor Road, Kempville Shopping Centre, Kempville, Mkhondo 2380</p>
                 </div>
                 <div class="contact-card">
                     <div class="icon">📞</div>
@@ -643,8 +620,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dr. Prefa Medical Centre — Dr. V. Prefa & Partners. All rights reserved.</p>
-            <p style="margin-top:8px;">Shop 18, Mansoor Road, Kempville, Mkhondo 2380 | <a href="tel:+27178263711">017 826 3711</a> | <a href="mailto:vprefa@gmail.com">vprefa@gmail.com</a></p>
+            <p>&copy; 2026 Dr. Prefa Medical Centre — Dr. V. Prefa &amp; Partners. All rights reserved.</p>
+            <p style="margin-top:8px;">Shop 18, Mansoor Road, Kempville Shopping Centre, Kempville, Mkhondo 2380 | <a href="tel:+27178263711">017 826 3711</a> | <a href="mailto:vprefa@gmail.com">vprefa@gmail.com</a></p>
             <p style="margin-top:8px;"><a href="about.html">About</a> · <a href="after%20hour.html">After-Hours</a> · <a href="contact.html">Contact</a> · <a href="policy.html">Privacy Policy</a></p>
         </div>
     </footer>
